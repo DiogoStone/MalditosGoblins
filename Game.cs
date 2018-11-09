@@ -51,7 +51,25 @@ namespace MalditosGoblins.Desktop
             Panel background = new Panel(new Vector2(screenWidth, screenHeight));
             UserInterface.Active.AddEntity(background);
 
-            // TODO: use this.Content to load your game content here
+            Panel avatarPanel = new Panel(new Vector2(300, screenHeight/2), anchor: Anchor.TopLeft, skin: PanelSkin.Simple);
+            background.AddChild(avatarPanel);
+            Header title = new Header("A sua Coisinha Verde");
+            title.Scale = 0.8f;
+            avatarPanel.AddChild(title);
+            avatarPanel.AddChild(new HorizontalLine());
+
+            Panel skillPanel = new Panel(new Vector2(300, screenHeight / 2), anchor: Anchor.BottomLeft, skin: PanelSkin.Simple);
+            background.AddChild(skillPanel);
+
+            skillPanel.AddChild(new Header("Os paranaues"));
+            skillPanel.AddChild(new HorizontalLine());
+            PanelTabs panelTabs = new PanelTabs();
+            panelTabs.SetAnchor(Anchor.BottomRight);
+            panelTabs.BackgroundSkin = PanelSkin.Simple;
+            panelTabs.Size = new Vector2(500, screenHeight / 2);
+            panelTabs.Offset = new Vector2(10, 10);
+            background.AddChild(panelTabs);
+
         }
 
         /// <summary>
