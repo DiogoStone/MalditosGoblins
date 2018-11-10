@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="GoblinData.Coloration[]">
+    <Item>
+      <name>Verde Claro</name>
+      <color>199 234 70</color>
+      <combat>2</combat>
+      <knowledge>2</knowledge>
+      <dextirity>1</dextirity>
+      <luck>1</luck>
+    </Item>
+  </Asset>
+</XnaContent>

@@ -10,10 +10,31 @@
 
 #-------------------------------- References --------------------------------#
 
-/reference:../packages/GeonBit.UI.3.2.0/lib/geonbitui/DataTypes.dll
-/reference:../packages/InfinitespaceStudios.Pipeline.1.0.9/tools/InfinitespaceStudios.Pipeline.dll
+/reference:..\packages\GeonBit.UI.3.2.0\lib\geonbitui\DataTypes.dll
+/reference:..\packages\InfinitespaceStudios.Pipeline.1.0.9\tools\InfinitespaceStudios.Pipeline.dll
+/reference:..\GoblinData\bin\Release\GoblinData.dll
 
 #---------------------------------- Content ---------------------------------#
+
+#begin ../Resources/Colorations.xml
+/importer:XmlImporter
+/processor:PassThroughProcessor
+/build:../Resources/Colorations.xml;Xml/Colorations.xml
+
+#begin ../Resources/Equipment.xml
+/importer:XmlImporter
+/processor:PassThroughProcessor
+/build:../Resources/Equipment.xml;Xml/Equipment.xml
+
+#begin ../Resources/Ocupation.xml
+/importer:XmlImporter
+/processor:PassThroughProcessor
+/build:../Resources/Ocupation.xml;Xml/Ocupation.xml
+
+#begin ../Resources/Skill.xml
+/importer:XmlImporter
+/processor:PassThroughProcessor
+/build:../Resources/Skill.xml;Xml/Skill.xml
 
 #begin GeonBit.UI/themes/editor/effects/disabled.fx
 /importer:EffectImporter

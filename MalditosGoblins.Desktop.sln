@@ -1,9 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MalditosGoblins.Desktop", "MalditosGoblins.Desktop.csproj", "{905B6B3B-33B1-49FB-B691-AE30F88CB4F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoblinData", "GoblinData\GoblinData.csproj", "{0197CA8E-C946-43F6-B19D-7783C1571E0E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoblinData", "GoblinData\GoblinData.csproj", "{7FA9D75F-00C4-48BC-BAEA-115950D03757}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +16,15 @@ Global
 		{905B6B3B-33B1-49FB-B691-AE30F88CB4F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{905B6B3B-33B1-49FB-B691-AE30F88CB4F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{905B6B3B-33B1-49FB-B691-AE30F88CB4F5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0197CA8E-C946-43F6-B19D-7783C1571E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0197CA8E-C946-43F6-B19D-7783C1571E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0197CA8E-C946-43F6-B19D-7783C1571E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0197CA8E-C946-43F6-B19D-7783C1571E0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FA9D75F-00C4-48BC-BAEA-115950D03757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FA9D75F-00C4-48BC-BAEA-115950D03757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FA9D75F-00C4-48BC-BAEA-115950D03757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FA9D75F-00C4-48BC-BAEA-115950D03757}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8549784A-DD8B-4775-B0E4-76DDF982DBE5}
 	EndGlobalSection
 EndGlobal
