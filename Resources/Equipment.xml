@@ -1,5 +1,95 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <XnaContent xmlns:ns="Microsoft.Xna.Framework">
   <Asset Type="Object">
+	<Item>
+		<name>Adaga</name>
+		<protection>0</protection>
+		<damage>2</damage>
+		<description>Arremessável</description>
+	</Item>
+	<Item>
+		<name>Escudo</name>
+		<protection>1</protection>
+		<damage>0</damage>
+		<description></description>
+	</Item>
+	<Item>
+		<name>Arco Simples</name>
+		<protection>0</protection>
+		<damage>2</damage>
+		<description>Distância</description>
+	</Item>
+	<Item>
+		<name>Arco Composto</name>
+		<protection>0</protection>
+		<damage>3</damage>
+		<description>Distância</description>
+	</Item>
+	<Item>
+		<name>Besta</name>
+		<protection>0</protection>
+		<damage>3</damage>
+		<description>Distância</description>
+	</Item>
+	<Item>
+		<name>Elmo</name>
+		<protection>1</protection>
+		<damage>0</damage>
+		<description></description>
+	</Item>
+	<Item>
+		<name>Espada</name>
+		<protection>0</protection>
+		<damage>3</damage>
+		<description></description>
+	</Item>
+	<Item>
+		<name>Machado</name>
+		<protection>0</protection>
+		<damage>4</damage>
+		<description></description>
+	</Item>
+	<Item>
+		<name>Machadinha</name>
+		<protection>0</protection>
+		<damage>3</damage>
+		<description>Arremessável</description>
+	</Item>
+	<Item>
+		<name>Espadona</name>
+		<protection>0</protection>
+		<damage>5</damage>
+		<description></description>
+	</Item>
+	<Item>
+		<name>Armadura</name>
+		<protection>1</protection>
+		<damage>0</damage>
+		<description></description>
+	</Item>
+	<Item>
+		<name>Pistola</name>
+		<protection>0</protection>
+		<damage>4</damage>
+		<description>Distância</description>
+	</Item>
+	<Item>
+		<name>Galinha Explosiva</name>
+		<protection>0</protection>
+		<damage>4</damage>
+		<description>Distância; Atinge uma área de 3m</description>
+	</Item>
+	<Item>
+		<name>Barril de Pólvora</name>
+		<protection>0</protection>
+		<damage>5</damage>
+		<description>Atinge uma área de 3m</description>
+	</Item>
+	<Item>
+		<name>Canhão</name>
+		<protection>0</protection>
+		<damage>8</damage>
+		<description>Distância</description>
+	</Item>
   </Asset>
 </XnaContent>
