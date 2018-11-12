@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+    <Asset Type="GoblinData.EquipmentSet[]">
+        <Item>
+            <id>1</id>
+            <type>0</type>
+            <equipments>1 1</equipments>
+        </Item>
+    </Asset>
+</XnaContent>

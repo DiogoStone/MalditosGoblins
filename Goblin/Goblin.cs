@@ -8,7 +8,7 @@ namespace MalditosGoblins.Desktop.Goblin
     public class Goblin
     {
         public string name;
-        public Coloration color;
+        public Coloration coloration;
         public Ocupation ocupation;
         public List<Feature> features;
         public List<Equipment> equipments;
@@ -33,9 +33,9 @@ namespace MalditosGoblins.Desktop.Goblin
             return goblin;
         }
 
-        public Color getColor()
+        public Color GetColor()
         {
-            return new Color(this.color.R, this.color.G, this.color.B);
+            return this.coloration.color;
         }
     }
 }

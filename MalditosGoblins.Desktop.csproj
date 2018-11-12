@@ -112,6 +112,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
+    <None Include="Resources\EquipmentSet.xml" />
+    <None Include="Resources\Features.xml" />
+    <None Include="Resources\Anomalies.xml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="GoblinData\GoblinData.csproj">

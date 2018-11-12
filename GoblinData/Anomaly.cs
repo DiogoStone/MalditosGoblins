@@ -2,10 +2,9 @@
 
 namespace GoblinData
 {
-    public class Feature
+    public class Anomaly
     {
         public int id;
         public string name;
-        public string description;
     }
 }
