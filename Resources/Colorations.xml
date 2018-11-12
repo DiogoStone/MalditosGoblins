@@ -3,11 +3,51 @@
   <Asset Type="GoblinData.Coloration[]">
     <Item>
       <name>Verde Claro</name>
-      <color>199 234 70</color>
+      <color>141 211 129</color>
       <combat>2</combat>
       <knowledge>2</knowledge>
       <dextirity>1</dextirity>
       <luck>1</luck>
+    </Item>
+	<Item>
+      <name>Verde</name>
+      <color>35 147 17</color>
+      <combat>2</combat>
+      <knowledge>1</knowledge>
+      <dextirity>1</dextirity>
+      <luck>2</luck>
+    </Item>
+	<Item>
+      <name>Verde Escuro</name>
+      <color>8 50 1</color>
+      <combat>2</combat>
+      <knowledge>1</knowledge>
+      <dextirity>2</dextirity>
+      <luck>1</luck>
+    </Item>
+	<Item>
+      <name>Amarelo</name>
+      <color>241 233 2</color>
+      <combat>1</combat>
+      <knowledge>1</knowledge>
+      <dextirity>2</dextirity>
+      <luck>2</luck>
+    </Item>
+	<Item>
+      <name>Vermelho</name>
+      <color>195 0 0</color>
+      <combat>1</combat>
+      <knowledge>2</knowledge>
+      <dextirity>2</dextirity>
+      <luck>1</luck>
+    </Item>
+	<Item>
+      <name>Azul</name>
+      <color>2 144 210</color>
+      <combat>1</combat>
+      <knowledge>2</knowledge>
+      <dextirity>1</dextirity>
+      <luck>2</luck>
     </Item>
   </Asset>
 </XnaContent>
