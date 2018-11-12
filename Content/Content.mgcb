@@ -16,25 +16,40 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin ../Resources/Anomalies.xml
+/importer:XmlImporter
+/processor:PassThroughProcessor
+/build:../Resources/Anomalies.xml;Xml/Anomalies.xml
+
 #begin ../Resources/Colorations.xml
 /importer:XmlImporter
 /processor:PassThroughProcessor
 /build:../Resources/Colorations.xml;Xml/Colorations.xml
 
-#begin ../Resources/Equipment.xml
+#begin ../Resources/Equipments.xml
 /importer:XmlImporter
 /processor:PassThroughProcessor
-/build:../Resources/Equipment.xml;Xml/Equipment.xml
+/build:../Resources/Equipments.xml;Xml/Equipments.xml
 
-#begin ../Resources/Ocupation.xml
+#begin ../Resources/EquipmentSets.xml
 /importer:XmlImporter
 /processor:PassThroughProcessor
-/build:../Resources/Ocupation.xml;Xml/Ocupation.xml
+/build:../Resources/EquipmentSets.xml;Xml/EquipmentSets.xml
 
-#begin ../Resources/Skill.xml
+#begin ../Resources/Features.xml
 /importer:XmlImporter
 /processor:PassThroughProcessor
-/build:../Resources/Skill.xml;Xml/Skill.xml
+/build:../Resources/Features.xml;Xml/Features.xml
+
+#begin ../Resources/Ocupations.xml
+/importer:XmlImporter
+/processor:PassThroughProcessor
+/build:../Resources/Ocupations.xml;Xml/Ocupations.xml
+
+#begin ../Resources/Skills.xml
+/importer:XmlImporter
+/processor:PassThroughProcessor
+/build:../Resources/Skills.xml;Xml/Skills.xml
 
 #begin GeonBit.UI/themes/editor/effects/disabled.fx
 /importer:EffectImporter

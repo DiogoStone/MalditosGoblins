@@ -13,7 +13,7 @@ namespace MalditosGoblins.Desktop
         [STAThread]
         static void Main()
         {
-            using (var game = new GameGoblin())
+            using (var game = new MainGame())
                 game.Run();
         }
     }

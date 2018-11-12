@@ -3,24 +3,29 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
 // Pacote de UI
+using System;
 using GeonBit.UI;
 using GeonBit.UI.Entities;
+using MalditosGoblins.Desktop.Goblin;
 
 namespace MalditosGoblins.Desktop
 {
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
-    public class GameGoblin : Game
+    public class MainGame : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
-        public GameGoblin()
+        public MainGame()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             Window.IsBorderless = true;
+            graphics.PreferredBackBufferWidth = 960;
+            graphics.PreferredBackBufferHeight = 640;
+            graphics.ApplyChanges();
         }
 
         /// <summary>
@@ -32,6 +37,7 @@ namespace MalditosGoblins.Desktop
         protected override void Initialize()
         {
             // Initialize the UI
+
             UserInterface.Initialize(Content, BuiltinThemes.hd);
             UserInterface.Active.IncludeCursorInRenderTarget = false;
 
@@ -44,32 +50,38 @@ namespace MalditosGoblins.Desktop
         /// </summary>
         protected override void LoadContent()
         {
+            GoblinLoader.Instance.Load(Content);
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            LoadUIContent();
+        }
+
+        protected void LoadUIContent()
+        {
             int screenHeight = GraphicsDevice.Viewport.Height;
             int screenWidth = GraphicsDevice.Viewport.Width;
             Panel background = new Panel(new Vector2(screenWidth, screenHeight));
             UserInterface.Active.AddEntity(background);
 
-            Panel avatarPanel = new Panel(new Vector2(300, screenHeight/2), anchor: Anchor.TopLeft, skin: PanelSkin.Simple);
+            Panel avatarPanel = new Panel(new Vector2(300, screenHeight / 2 - 35), anchor: Anchor.TopLeft, skin: PanelSkin.Simple);
             background.AddChild(avatarPanel);
             Header title = new Header("A sua Coisinha Verde");
             title.Scale = 0.8f;
             avatarPanel.AddChild(title);
             avatarPanel.AddChild(new HorizontalLine());
 
-            Panel skillPanel = new Panel(new Vector2(300, screenHeight / 2), anchor: Anchor.BottomLeft, skin: PanelSkin.Simple);
+            Panel skillPanel = new Panel(new Vector2(300, screenHeight / 2 - 35), anchor: Anchor.BottomLeft, skin: PanelSkin.Simple);
             background.AddChild(skillPanel);
 
             skillPanel.AddChild(new Header("Os paranaues"));
             skillPanel.AddChild(new HorizontalLine());
+
             PanelTabs panelTabs = new PanelTabs();
             panelTabs.SetAnchor(Anchor.BottomRight);
             panelTabs.BackgroundSkin = PanelSkin.Simple;
             panelTabs.Size = new Vector2(500, screenHeight / 2);
             panelTabs.Offset = new Vector2(10, 10);
             background.AddChild(panelTabs);
-
         }
 
         /// <summary>
