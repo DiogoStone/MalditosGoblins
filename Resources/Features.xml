@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XnaContent>
-  <Asset Type="GoblinData.Feature[]">
+    <Asset Type="GoblinData.Feature[]">
+        <Item>
+            <id>1</id>
+            <name>Insano</name>
+            <description>Voce nao tem controle de seus atos. Sempre que o mestre quiser, ele pode pedir um teste de Sorte (dificuldade 5). Se voce falhar, o mestre podera decidir um ato idiota para seu personagem fazer.</description>
+        </Item>
   </Asset>
 </XnaContent>
