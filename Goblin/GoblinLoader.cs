@@ -61,6 +61,11 @@ namespace MalditosGoblins.Desktop.Goblin
             return equip;
         }
 
+        public Skill GetSkillsById(int id)
+        {
+            return Array.Find<Skill>(this.skills, s => s.id == id);
+        }
+
         public Ocupation GetRandomOcupation()
         {
             int index = rnd.Next(0, this.ocupations.Length);

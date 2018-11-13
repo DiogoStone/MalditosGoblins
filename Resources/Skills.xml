@@ -1,5 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XnaContent>
   <Asset Type="GoblinData.Skill[]">
+    <Item>
+      <id>1</id>
+      <name>Mestre de Armas</name>
+      <description>Voce sempre rola +1 dado em todos os ataques que voce fizer lutando com sua arma favorita (Escolha uma).</description>
+    </Item>
+    <Item>
+      <id>2</id>
+      <name>Ataque Brutal</name>
+      <description>Uma vez ao dia voce pode fazer um ataque brutal, que causa o dobro de dano na vitima.</description>
+    </Item>
   </Asset>
 </XnaContent>

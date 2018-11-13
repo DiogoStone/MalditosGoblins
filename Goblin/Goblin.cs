@@ -12,6 +12,7 @@ namespace MalditosGoblins.Desktop.Goblin
         public Ocupation ocupation;
         public List<Feature> features;
         public List<Equipment> equipments;
+        public List<Skill> skills;
 
         public int level = 1;
         public int max_health = 4;
@@ -26,15 +27,19 @@ namespace MalditosGoblins.Desktop.Goblin
 
 
 
-        public Goblin(string name)
+        public Goblin()
         {
-            this.name = name;
+            this.name = "";
             this.current_health = max_health;
             this.current_mana = max_mana;
             this.coloration = GoblinLoader.Instance.GetRandomColoration();
             this.ocupation = GoblinLoader.Instance.GetRandomOcupation();
-            this.equipments = new List<Equipment>(GoblinLoader.Instance.GetRandomEquipmentsByType(this.ocupation.equipType));
-
+            this.equipments = GoblinLoader.Instance.GetRandomEquipmentsByType(this.ocupation.equipType);
+            this.skills = new List<Skill>();
+            foreach(int skillId in this.ocupation.skills)
+            {
+                this.skills.Add(GoblinLoader.Instance.GetSkillsById(skillId));
+            }
         }
 
         public Color GetColor()

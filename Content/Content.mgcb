@@ -12,7 +12,7 @@
 
 /reference:..\packages\GeonBit.UI.3.2.0\lib\geonbitui\DataTypes.dll
 /reference:..\packages\InfinitespaceStudios.Pipeline.1.0.9\tools\InfinitespaceStudios.Pipeline.dll
-/reference:..\GoblinData\bin\Release\GoblinData.dll
+/reference:..\GoblinData\bin\Debug\GoblinData.dll
 
 #---------------------------------- Content ---------------------------------#
 
