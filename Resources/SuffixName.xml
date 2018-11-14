@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+    <Asset Type="GoblinData.SuffixName[]">
+        <Item>
+            <id>1</id>
+            <suffix>or</suffix>
+        </Item>
+		<Item>
+            <id>2</id>
+            <suffix>ut</suffix>
+        </Item>
+		<Item>
+            <id>3</id>
+            <suffix>ar</suffix>
+        </Item>
+		<Item>
+            <id>4</id>
+            <suffix>an</suffix>
+        </Item>
+		<Item>
+            <id>5</id>
+            <suffix>ot</suffix>
+        </Item>
+		<Item>
+            <id>6</id>
+            <suffix>ec</suffix>
+        </Item>
+    </Asset>
+</XnaContent>
