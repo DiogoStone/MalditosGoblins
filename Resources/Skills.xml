@@ -34,45 +34,50 @@
 	<Item>
       <id>7</id>
       <name>Resistência</name>
-      <description>Você pode fazer um teste de Sorte (dificuldade 5) quando receber dano de fogo ou explosão de fogo. Se vencer, você não recebe dano.</description>
+      <description> Você pode fazer um teste de Sorte (dificuldade 5) quando receber dano de fogo ou explosão de fogo. Se vencer, você não recebe dano.</description>
     </Item>
 	<Item>
       <id>8</id>
+      <name>Resistência</name>
+      <description>Você pode fazer um teste de Sorte (dificuldade 5) quando receber dano de fogo ou explosão de fogo. Se vencer, você não recebe dano.</description>
+    </Item>
+	<Item>
+      <id>9</id>
       <name>Imunidade</name>
       <description>Você nunca recebe dano com fogo ou explosão.</description>
     </Item>
 	<Item>
-      <id>9</id>
+      <id>10</id>
       <name>Roubar</name>
       <description>Você pode roubar sem ser visto se vencer um teste resistido de Habilidade contra a vítima.</description>
     </Item>
 	<Item>
-      <id>10</id>
+      <id>11</id>
       <name>Armar Armadilhas</name>
       <description>Você pode fazer uma armadilha em qualquer lugar se tiver alguns materiais. A pessoa terá que passar em um teste de Sorte (dificuldade 5) para não cair na sua armadilha.</description>
     </Item>
 	<Item>
-      <id>11</id>
+      <id>12</id>
       <name>Ataque Furtivo</name>
       <description>Se você não foi visto, você pode fazer um ataque furtivo. Se acertar, a vitima deverá fazer um teste de Sorte (Dificuldade 5). Se ela falhar ela morrerá.</description>
     </Item>
 	<Item>
-      <id>12</id>
+      <id>13</id>
       <name>Grito de Guerra</name>
       <description>Uma vez ao dia você pode dar um grito que permitirá que todos seus aliados rolem 1 dado a mais para se esquivar até o final da batalha.</description>
     </Item>
 	<Item>
-      <id>13</id>
+      <id>14</id>
       <name>Raio de Energia</name>
       <description>Você pode gastar pontos de magia para fazer ataques a distância. Cada ponto gasto causará um ponto de dano (pode gastar mais para fazer ataque com mais dano).</description>
     </Item>
 	<Item>
-      <id>14</id>
+      <id>15</id>
       <name>Cura</name>
       <description>Você pode gastar seus pontos de magia para curar seus aliados. Cada ponto de magia recupera um ponto de vitalidade.</description>
     </Item>
 	<Item>
-      <id>15</id>
+      <id>16</id>
       <name>Petrificar</name>
       <description>Gastando 6 pontos de magia você pode paralisar qualquer criatura.</description>
     </Item>
