@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+    <Asset Type="GoblinData.PreffixName[]">
+        <Item>
+            <id>1</id>
+            <preffix>Sp</preffix>
+        </Item>
+		<Item>
+            <id>2</id>
+            <preffix>Cr</preffix>
+        </Item>
+		<Item>
+            <id>3</id>
+            <preffix>Bu</preffix>
+        </Item>
+		<Item>
+            <id>4</id>
+            <preffix>Ut</preffix>
+        </Item>
+		<Item>
+            <id>5</id>
+            <preffix>An</preffix>
+        </Item>
+		<Item>
+            <id>6</id>
+            <preffix>Om</preffix>
+        </Item>
+    </Asset>
+</XnaContent>
