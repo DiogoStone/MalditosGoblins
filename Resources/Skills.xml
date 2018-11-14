@@ -38,8 +38,8 @@
     </Item>
 	<Item>
       <id>8</id>
-      <name>Resistência</name>
-      <description>Você pode fazer um teste de Sorte (dificuldade 5) quando receber dano de fogo ou explosão de fogo. Se vencer, você não recebe dano.</description>
+      <name>Suicídio Explosivo</name>
+      <description>Usando sua arma, você pode se explodir e matar TODOS os que estiverem na área da explosão.</description>
     </Item>
 	<Item>
       <id>9</id>
