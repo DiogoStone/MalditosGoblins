@@ -1,10 +1,104 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XnaContent>
     <Asset Type="GoblinData.EquipmentSet[]">
+		<!--> Equipamentos Leves </!-->
         <Item>
             <id>1</id>
             <type>0</type>
-            <equipments>1 1</equipments>
+            <equipments>1 1</equipments> <!--> 2 Adagas </!-->
+        </Item>
+		<Item>
+            <id>2</id>
+            <type>0</type>
+            <equipments>1 2</equipments> <!--> Adagas, Escudo</!-->
+        </Item>
+		<Item>
+            <id>3</id>
+            <type>0</type>
+            <equipments>3</equipments> <!--> Arco Simples </!-->
+        </Item>
+		<Item>
+            <id>4</id>
+            <type>0</type>
+            <equipments>4</equipments>  <!--> Arco Composto </!-->
+        </Item>
+		<Item>
+            <id>5</id>
+            <type>0</type>
+            <equipments>1 1 1 1</equipments> <!--> 4 Adagas </!-->
+        </Item>
+		<Item>
+            <id>6</id>
+            <type>0</type>
+            <equipments>5 6</equipments> <!--> Besta, Elmo </!-->
+        </Item>
+		<!--> Equipamentos Pesados </!-->
+		<Item>
+            <id>7</id>
+            <type>1</type>
+            <equipments>7 2</equipments> <!--> Espada, Escudo </!-->
+        </Item>
+		<Item>
+            <id>8</id>
+            <type>1</type>
+            <equipments>8 6</equipments> <!--> Machado, Elmo </!-->
+        </Item>
+		<Item>
+            <id>9</id>
+            <type>1</type>
+            <equipments>9 9</equipments> <!--> 2 Machadinhas </!-->
+        </Item>
+		<Item>
+            <id>10</id>
+            <type>1</type>
+            <equipments>10</equipments> <!--> Espadona </!-->
+        </Item>
+		<Item>
+            <id>11</id>
+            <type>1</type>
+            <equipments>7 7 11</equipments> <!--> 2 Espadas, Armadura </!-->
+        </Item>
+		<Item>
+            <id>12</id>
+            <type>1</type>
+            <equipments>1 7 11</equipments> <!--> Adaga, Espada, Armadura </!-->
+        </Item>
+		<!--> Equipamentos Explosivos </!-->
+		<Item>
+            <id>13</id>
+            <type>2</type>
+            <equipments>12 6</equipments> <!--> Pistola, Elmo </!-->
+        </Item>
+		<Item>
+            <id>14</id>
+            <type>2</type>
+            <equipments>12 12</equipments> <!--> 2 Pistolas </!-->
+        </Item>
+		<Item>
+            <id>15</id>
+            <type>2</type>
+            <equipments>13 13 13</equipments> <!--> 3 Galinhas Explosivas </!-->
+        </Item>
+		<Item>
+            <id>16</id>
+            <type>2</type>
+            <equipments>14</equipments> <!--> Barril de Pólvora </!-->
+        </Item>
+		<Item>
+            <id>17</id>
+            <type>2</type>
+            <equipments>12 13 13</equipments> <!--> Pistola, 2 Galinahs Exposivas </!-->
+        </Item>
+		<Item>
+            <id>18</id>
+            <type>2</type>
+            <equipments>15</equipments> <!--> Canhão </!-->
+        </Item>
+		<!--> Equipamentos Mágicos </!-->
+		<Item>
+            <id>19</id>
+            <type>3</type> 
+            <equipments>16</equipments> <!--> Cajado </!-->
         </Item>
     </Asset>
 </XnaContent>
