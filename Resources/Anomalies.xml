@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+    <Asset Type="GoblinData.Anomaly[]">
+        <Item>
+            <id>1</id>
+            <name>Manchas Rosas</name>
+        </Item>
+    </Asset>
+</XnaContent>

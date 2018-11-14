@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="GoblinData.Ocupation[]">
+    <Item>
+      <id>1</id>
+      <name>Mercenário</name>
+      <combat>1</combat>
+      <knowledge>0</knowledge>
+      <dextirity>1</dextirity>
+      <luck>0</luck>
+      <equipType>0</equipType>
+      <skills>1 2 2</skills>
+    </Item>
+  </Asset>
+</XnaContent>

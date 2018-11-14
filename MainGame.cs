@@ -3,24 +3,32 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
 // Pacote de UI
+using System;
+using System.Collections.Generic;
 using GeonBit.UI;
 using GeonBit.UI.Entities;
+using MalditosGoblins.Desktop.Goblin;
 
 namespace MalditosGoblins.Desktop
 {
     /// <summary>
     /// This is the main type for your game.
     /// </summary>
-    public class GameGoblin : Game
+    public class MainGame : Game
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        List<TabData> listTexts;
+        Goblin.Goblin goblin;
 
-        public GameGoblin()
+        public MainGame()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             Window.IsBorderless = true;
+            graphics.PreferredBackBufferWidth = 960;
+            graphics.PreferredBackBufferHeight = 640;
+            graphics.ApplyChanges();
         }
 
         /// <summary>
@@ -32,6 +40,7 @@ namespace MalditosGoblins.Desktop
         protected override void Initialize()
         {
             // Initialize the UI
+
             UserInterface.Initialize(Content, BuiltinThemes.hd);
             UserInterface.Active.IncludeCursorInRenderTarget = false;
 
@@ -44,32 +53,66 @@ namespace MalditosGoblins.Desktop
         /// </summary>
         protected override void LoadContent()
         {
+            GoblinLoader.Instance.Load(Content);
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            LoadUIContent();
+            ResetGoblin();
+        }
+
+        protected void ResetGoblin()
+        {
+            goblin = new Goblin.Goblin();
+            for(int i = 0; i < goblin.skills.Count; i++)
+            {
+                listTexts[i].panel.Find<Header>("HeaderText").Text = goblin.skills[i].name + DateTime.Now.ToString("h:mm:ss tt");
+                listTexts[i].panel.Find<Paragraph>("ParagraphText").Text = goblin.skills[i].description;
+            }
+        }
+
+        protected void LoadUIContent()
+        {
             int screenHeight = GraphicsDevice.Viewport.Height;
             int screenWidth = GraphicsDevice.Viewport.Width;
             Panel background = new Panel(new Vector2(screenWidth, screenHeight));
+            background.Padding = new Vector2(10, 10);
             UserInterface.Active.AddEntity(background);
 
-            Panel avatarPanel = new Panel(new Vector2(300, screenHeight/2), anchor: Anchor.TopLeft, skin: PanelSkin.Simple);
-            background.AddChild(avatarPanel);
-            Header title = new Header("A sua Coisinha Verde");
-            title.Scale = 0.8f;
+            Panel avatarPanel = new Panel(new Vector2(screenWidth / 3.5f, screenHeight / 2), anchor: Anchor.TopLeft, skin: PanelSkin.Simple);
+            Header title = new Header("Sua Coisinha Verde");
             avatarPanel.AddChild(title);
             avatarPanel.AddChild(new HorizontalLine());
+            background.AddChild(avatarPanel);
 
-            Panel skillPanel = new Panel(new Vector2(300, screenHeight / 2), anchor: Anchor.BottomLeft, skin: PanelSkin.Simple);
-            background.AddChild(skillPanel);
+            Panel statusPanel = new Panel(new Vector2(screenWidth / 3.5f, screenHeight / 2), anchor: Anchor.BottomLeft, skin: PanelSkin.Simple);
+            statusPanel.AddChild(new Header("Os paranaues"));
+            statusPanel.AddChild(new HorizontalLine());
+            background.AddChild(statusPanel);
 
-            skillPanel.AddChild(new Header("Os paranaues"));
-            skillPanel.AddChild(new HorizontalLine());
-            PanelTabs panelTabs = new PanelTabs();
-            panelTabs.SetAnchor(Anchor.BottomRight);
-            panelTabs.BackgroundSkin = PanelSkin.Simple;
-            panelTabs.Size = new Vector2(500, screenHeight / 2);
-            panelTabs.Offset = new Vector2(10, 10);
-            background.AddChild(panelTabs);
+            PanelTabs skillTabs = new PanelTabs();
+            skillTabs.SetAnchor(Anchor.BottomRight);
+            skillTabs.BackgroundSkin = PanelSkin.Simple;
+            skillTabs.Size = new Vector2(screenWidth / 1.5f, screenHeight / 2);
+            skillTabs.Offset = new Vector2(10, 10);
+            background.AddChild(skillTabs);
 
+            listTexts = new List<TabData>();
+            for (int i = 1; i <= 3; i++) {
+                TabData tab = skillTabs.AddTab("Nivel " + i);
+                tab.button.ToolTipText = "Habilidade so pode ser utilizada no nivel " + i;
+                tab.button.Size = new Vector2(tab.button.Size.X, 50);
+                Header skillHeader = new Header("", anchor: Anchor.TopLeft);
+                skillHeader.Identifier = "HeaderText";
+                Paragraph skillText = new Paragraph("");
+                skillText.Identifier = "ParagraphText";
+                tab.panel.AddChild(skillHeader);
+                tab.panel.AddChild(skillText);
+                listTexts.Add(tab);
+            }
+
+            Button createGoblin = new Button("Recriar Goblin", anchor: Anchor.TopRight, offset: new Vector2(10, 10), size: new Vector2(screenWidth/3, 50));
+            createGoblin.OnClick = (Entity btn) => { ResetGoblin(); };
+            background.AddChild(createGoblin);
         }
 
         /// <summary>

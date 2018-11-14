@@ -2,7 +2,7 @@
 
 namespace GoblinData
 {
-    public class Feature
+    public class Skill
     {
         public int id;
         public string name;

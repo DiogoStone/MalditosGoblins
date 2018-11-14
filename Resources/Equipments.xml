@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+    <Asset Type="GoblinData.Equipment[]">
+        <Item>
+            <id>1</id>
+            <name>Adaga</name>
+            <damage>2</damage>
+            <description>Arremessável</description>
+        </Item>
+        <Item>
+            <id>2</id>
+            <name>Escudo</name>
+            <protection>1</protection>
+        </Item>
+        <Item>
+            <id>3</id>
+            <name>Arco Simples</name>
+            <damage>2</damage>
+            <description>Distância</description>
+        </Item>
+        <Item>
+            <id>4</id>
+            <name>Arco Composto</name>
+            <damage>3</damage>
+            <description>Distância</description>
+        </Item>
+        <Item>
+            <id>5</id>
+            <name>Besta</name>
+            <damage>3</damage>
+            <description>Distância</description>
+        </Item>
+        <Item>
+            <id>6</id>
+            <name>Elmo</name>
+            <protection>1</protection>
+        </Item>
+        <Item>
+            <id>7</id>
+            <name>Espada</name>
+            <damage>3</damage>
+        </Item>
+        <Item>
+            <id>8</id>
+            <name>Machado</name>
+            <damage>4</damage>
+        </Item>
+        <Item>
+            <id>9</id>
+            <name>Machadinha</name>
+            <damage>3</damage>
+            <description>Arremessável</description>
+        </Item>
+        <Item>
+            <id>10</id>
+            <name>Espadona</name>
+            <damage>5</damage>
+        </Item>
+        <Item>
+            <id>11</id>
+            <name>Armadura</name>
+            <protection>1</protection>
+            <damage>0</damage>
+        </Item>
+        <Item>
+            <id>12</id>
+            <name>Pistola</name>
+            <damage>4</damage>
+            <description>Distância</description>
+        </Item>
+        <Item>
+            <id>13</id>
+            <name>Galinha Explosiva</name>
+            <damage>4</damage>
+            <description>Distância; Atinge uma área de 3m</description>
+        </Item>
+        <Item>
+            <id>14</id>
+            <name>Barril de Pólvora</name>
+            <damage>5</damage>
+            <description>Atinge uma área de 3m</description>
+        </Item>
+        <Item>
+            <id>15</id>
+            <name>Canhão</name>
+            <damage>8</damage>
+            <description>Distância</description>
+        </Item>
+        <Item>
+            <id>16</id>
+            <name>Cajado</name>
+            <damage>1</damage>
+            <description></description>
+        </Item>
+    </Asset>
+</XnaContent>
